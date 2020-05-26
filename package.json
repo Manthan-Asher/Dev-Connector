@@ -6,18 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "server":"nodemon server.js"
+    "server": "nodemon server.js"
   },
   "author": "Manthan Asher",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "config": "^3.3.1",
     "express": "^4.17.1",
     "express-validator": "^6.5.0",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
     "mongoose": "^5.9.15"
   },
   "devDependencies": {
