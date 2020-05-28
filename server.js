@@ -2,15 +2,16 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser=require('body-parser')
 
-const app = express();
-app.use(bodyParser.json({extended:true}))
-
 // Connect Database
 mongoose.connect("mongodb://localhost:27017/devconnectorDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex:true
+  useCreateIndex:true,
+  useFindAndModify:false
 });
+
+const app = express();
+app.use(bodyParser.json({extended:true}))
 
 app.get("/", (req, res) => res.send("API running"));
 
