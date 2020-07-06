@@ -110,11 +110,11 @@ router.delete("/:id", Auth, async (req, res) => {
   }
 });
 
-// @route  POST api/posts/like/:id
+// @route  PutT api/posts/like/:id
 // @desc   like post
 // @access  private
 
-router.post("/like/:id", Auth, async (req, res) => {
+router.put("/like/:id", Auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
 
@@ -137,11 +137,11 @@ router.post("/like/:id", Auth, async (req, res) => {
   }
 });
 
-// @route  POST api/posts/unlike/:id
+// @route  PUTT api/posts/unlike/:id
 // @desc   unlike post
 // @access  private
 
-router.post("/unlike/:id", Auth, async (req, res) => {
+router.put("/unlike/:id", Auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
 
