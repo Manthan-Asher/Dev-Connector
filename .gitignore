@@ -1,7 +1,7 @@
 node_modules/
 
-config/
+config/default.json
 
-devconnector_html_theme/
+
 
 client/node_modules/
