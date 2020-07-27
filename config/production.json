@@ -1,5 +1,5 @@
 {
-  "mongoURL": "mongodb+srv://Manthan:manthan2001@devconnector.9jdbf.mongodb.net/devconnectorDB?retryWrites=true&w=majority",
-  "jwtSecret": "MySecretToken",
-  "githubToken": "aa076599a929acd243ec60019b5a354fadd20968"
+  "mongoURL": process.env.MONGO_URL,
+  "jwtSecret": process.env.JWT_SECRET,
+  "githubToken": process.env.GITHUB_TOKEN
 }
